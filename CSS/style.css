@@ -1,3 +1,31 @@
-.Accommodation {
-    display:flex
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+#nav {
+    list-style: none;
+    font-weight:lighter;
+    margin-bottom: 10px;
+    width: 200%;
+    display:flex;
+  }
+
+  #img {
+
+  }
+
+  #links {
+    display:flex;
+    justify-content: flex-end;
+   }
+a {
+    text-decoration:none;
+    color:#8b8987;
+}
+a:hover {
+    color:#0065FC;
+    text-decoration: overline;
 }
