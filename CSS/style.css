@@ -44,17 +44,32 @@ a:hover {
     text-decoration: overline;
 }
 
-.form {
-    background-color: none;
-    display: inline-flex;
-    align-items:center;
-    box-sizing: border-box;
-    border-radius: 10px;
-    border: 5px; 
-    border-color: #070707;
-    margin: 10px;
-    padding: 10px;
+#searchform {
+    
+}
+
+button {
+    width: auto;
+    font-weight: bolder;
+    background-color: #0065FC;
+    caret-color: white;
 }
 
 
+
+ul {
+    list-style: none;
+    font-weight: bold;
+    display:flex;
+    flex-direction: row;
+}
+
+li {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    border-color: #575350;
+    border-width:thick;
+}
 
