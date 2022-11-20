@@ -3,12 +3,20 @@
 body {
     font-family: 'Raleway', sans-serif;
     width: auto;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 0;
+    margin: 0;
 }
 
 #headdiv {
  box-sizing: border-box;
  display: flex;
- padding: 10px;
+ padding-right: 20px;
  }
 
 .navbar {
@@ -20,10 +28,6 @@ body {
 #links {
     display:flex;
     flex-direction: row;
-    padding: 15px;
-    padding-top: 30px;
-    margin: 10px;
-    border: 10px;
 }
 
 img {
@@ -50,7 +54,7 @@ a:hover {
     border-color: #0065FC;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 600px) {
 
 #headdiv {
     display: flex;
@@ -67,6 +71,7 @@ a:hover {
     border-width: 2px;
     border-bottom-style: solid;
     border-color: #0065FC;
+    border-top-style: none;
 }
 
 }
