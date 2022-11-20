@@ -7,8 +7,8 @@ body {
 
 #headdiv {
  box-sizing: border-box;
- letter-spacing: 2px;
  display: flex;
+ padding: 10px;
  }
 
 .navbar {
@@ -21,32 +21,56 @@ body {
     display:flex;
     flex-direction: row;
     padding: 15px;
-    margin: 15px;
+    padding-top: 30px;
+    margin: 10px;
     border: 10px;
-    font-weight: bold;
 }
 
-#Accommodation {
-    justify-content: space-around;
-}
+img {
+    max-width: fit-content;
+    height: fit-content;
+    padding: 10px;
 
-#Activities {
-    justify-content: space-between;
+
 }
 
 
 a {
     text-decoration:none;
     color:#8b8987;
-}
-a:hover {
-    color:#0065FC;
-    text-decoration: overline;
+    padding: 10px;
+    padding-top: 30px;
+ 
 }
 
-#searchform {
-    
+a:hover {
+    color:#0065FC;
+    border-width: 2px;
+    border-top-style: solid;
+    border-color: #0065FC;
 }
+
+@media only screen and (max-device-width: 480px) {
+
+#headdiv {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+}
+
+a:hover {
+    color:#0065FC;
+    border-width: 2px;
+    border-bottom-style: solid;
+    border-color: #0065FC;
+}
+
+}
+/** end of head section CSS - need to add media queries */
 
 button {
     width: auto;
