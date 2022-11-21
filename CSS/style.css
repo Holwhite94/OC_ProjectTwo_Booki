@@ -95,10 +95,17 @@ ul {
 
 li {
     box-sizing: border-box;
-    padding: 10px;
+    padding-right: 5px;
     margin: 20px;
-    border-radius: 5px;
-    border-color: #575350;
-    border-width:thick;
+    border-radius: 50px;
+    border-color: #afaeac;
+    border-style: solid;
 }
 
+i {
+    background-color: #DEEBFF;
+    color: #0065FC;
+    padding: 10px;
+    border-style: hidden;
+    border-radius: 50px;
+}
