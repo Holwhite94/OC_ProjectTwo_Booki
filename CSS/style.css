@@ -174,12 +174,19 @@ i {
     flex-basis: 100%;
     flex-wrap: wrap;
     background-color:#F2F2F2;
-    border-radius: 5px;
-    width:auto
+    border-radius: 10px;
+    box-sizing: border-box;
+    width:65%;
+    margin-left:50px;
+    padding: 10px
 }
+
+
 
 #acomhead {
     align-self: stretch;
+    font-size: small;
+    padding-left: 20px;
 }
 
 #hotelcards {
@@ -187,13 +194,23 @@ i {
     flex-direction: row;
     flex-wrap: wrap;
     flex-basis: content;
-    justify-content: space-between;
+    justify-content: space-around;
+    
+
+}
+
+#star {
+    background: none;
+    border-radius: 0px;
+    padding:2px;
+    color:#0065FC;
 }
 
 .cards {
     border-style: solid;
     border-color: white;
     border-radius: 20px;
+    background-color: white;
 }
 
 .hotelimg {
@@ -204,3 +221,11 @@ i {
 }
 
 
+
+.acominfo {
+    font-size: smaller;
+    padding-left: 20px;
+    padding-bottom: 5px;
+   
+}
+}
