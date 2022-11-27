@@ -6,7 +6,6 @@ body {
     border: 0;
     margin: 0;
     padding: 0;
-    padding
 }
 
 header {
@@ -31,7 +30,7 @@ header {
     flex-direction: row;
 }
 
-img {
+#Logo {
     max-width: fit-content;
     height: fit-content;
     padding: 10px;
@@ -167,3 +166,41 @@ i {
     width:fit-content;
     height: fit-content;
 }
+
+/* accommodations */
+
+#acom {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    background-color:#F2F2F2;
+    border-radius: 5px;
+    width:auto
+}
+
+#acomhead {
+    align-self: stretch;
+}
+
+#hotelcards {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: content;
+    justify-content: space-between;
+}
+
+.cards {
+    border-style: solid;
+    border-color: white;
+    border-radius: 20px;
+}
+
+.hotelimg {
+    width: 300px;
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
