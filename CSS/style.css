@@ -228,4 +228,16 @@ i {
     padding-bottom: 5px;
    
 }
-}
+
+/* most popular */
+
+#mostpopular {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    background-color:#F2F2F2;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width:40%;
+    margin-left:50px;
+    padding: 10px
