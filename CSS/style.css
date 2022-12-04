@@ -170,13 +170,11 @@ i {
 /* accommodations */
 
 #acom {
-    display: flex;
     flex-basis: 100%;
-    flex-wrap: wrap;
     background-color:#F2F2F2;
     border-radius: 10px;
     box-sizing: border-box;
-    width:65%;
+    width:55%;
     margin-left:50px;
     padding: 10px
 }
@@ -184,7 +182,6 @@ i {
 
 
 #acomhead {
-    align-self: stretch;
     font-size: small;
     padding-left: 20px;
 }
@@ -193,8 +190,7 @@ i {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-basis: content;
-    justify-content: space-around;
+    flex-basis: 1, 1, 190px;
     
 
 }
@@ -214,8 +210,8 @@ i {
 }
 
 .hotelimg {
-    width: 300px;
-    height: 150px;
+    width: 200px;
+    height: 110px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -223,9 +219,10 @@ i {
 
 
 .acominfo {
-    font-size: smaller;
+    font-size: x-small;
     padding-left: 20px;
     padding-bottom: 5px;
+    height: 50px;
    
 }
 
@@ -233,11 +230,42 @@ i {
 
 #mostpopular {
     display: flex;
-    flex-basis: 100%;
+    flex-direction: column;
     flex-wrap: wrap;
     background-color:#F2F2F2;
     border-radius: 10px;
     box-sizing: border-box;
     width:40%;
     margin-left:50px;
-    padding: 10px
+    margin-right:50px;
+    padding: 10px;
+}
+
+span {
+    display:flex;
+    flex-direction: row;
+}
+
+.mpcards {
+    border-style: solid;
+    border-color: white;
+    border-radius: 20px;
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+   
+    
+   }
+
+   .mpinfo {
+    font-size: x-small;
+    padding-left: 50px;
+
+   }
+
+   .hotelimgmp {
+    height: 100px;
+    width: 130px; 
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+   }
