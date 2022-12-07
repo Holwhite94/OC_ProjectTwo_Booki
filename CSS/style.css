@@ -303,3 +303,63 @@ span {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
    }
+
+
+
+/* Activities */
+
+#actimg1 {
+   height: 470px;
+   width: 400px;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+   }
+
+#actimg2 {
+    height: 200px;
+    width: 400px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    }
+
+#actimg3 {
+    height: 150px;
+    width: 400px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    }
+
+#actimg4 {
+    height: 250px;
+    width: 400px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    }
+
+
+#actcards {
+    display: flex;
+    flex-flow: column wrap;
+    max-height: 600px;
+    margin-left: 50px;
+    }
+
+.act {
+    border-radius: 20px;
+    height: fit-content;
+    width: fit-content;
+    box-shadow: 2px 2px 2px 2px #b6b4b4;
+    margin: 10px;
+    
+}
+
+footer {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    flex-grow: 3;
+    background-color:#F2F2F2;
+    margin-top: 50px;
+}
+
