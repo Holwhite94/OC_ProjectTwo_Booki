@@ -54,33 +54,13 @@ a:hover {
     border-color: #0065FC;
 }
 
-@media only screen and (max-device-width: 600px) {
 
-#headdiv {
-    display: flex;
-    flex-direction: column;
-}
-
-img {
-    display: flex;
-    justify-content: center;
-}
-
-a:hover {
-    color:#0065FC;
-    border-width: 2px;
-    border-bottom-style: solid;
-    border-color: #0065FC;
-    border-top-style: none;
-}
-
-}
 /** end of head section CSS - need to add media queries */
 
 /* search */
 button {
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   border-style: none;
   background-color: #0065FC;
   font-family: 'Raleway', sans-serif;
@@ -91,7 +71,7 @@ button {
 
 form {
     display:flex;
-    border-radius: 20px;
+    border-radius: 10px;
     border-style: solid;
     border-color: #F2F2F2;
     width: fit-content;
@@ -108,10 +88,18 @@ input {
 #searchicon {
 background-color: #F2F2F2;
 color: black;
-border-top-left-radius: 20px;
-border-bottom-left-radius: 20px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
 border-bottom-right-radius: 0px;
 border-top-right-radius: 0px;
+}
+
+#text {
+    padding-left: 50px;
+}
+
+#searchform {
+    padding-left: 50px; 
 }
 
 /* Filters */
@@ -230,6 +218,7 @@ i {
 .hotelimg {
     width: 300px;
     height: 150px;
+    object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -300,6 +289,7 @@ span {
    .hotelimgmp {
     height: 160px;
     width: 170px; 
+    object-fit: cover;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
    }
@@ -308,50 +298,62 @@ span {
 
 /* Activities */
 
-#actimg1 {
-   height: 470px;
-   width: 400px;
+#actimg {
+   height:85%;
+   width: 100%;
+   object-fit:cover;
    border-top-left-radius: 20px;
    border-top-right-radius: 20px;
    }
 
-#actimg2 {
-    height: 200px;
-    width: 400px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    }
-
-#actimg3 {
-    height: 150px;
-    width: 400px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    }
-
-#actimg4 {
-    height: 250px;
-    width: 400px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    }
 
 
-#actcards {
+
+#actcardscontainer {
     display: flex;
     flex-flow: column wrap;
-    max-height: 600px;
     margin-left: 50px;
-    }
+    max-height: 700px;
+   }
 
-.act {
+#act {
     border-radius: 20px;
-    height: fit-content;
-    width: fit-content;
     box-shadow: 2px 2px 2px 2px #b6b4b4;
-    margin: 10px;
-    
+    margin: 20px;
+    display:flex;
+    overflow: hidden;
+    flex-direction: column;
 }
+
+#txt { 
+   font-weight: bold;
+   margin: 0px;
+   padding-left: 20px;
+   padding-top: 5px;
+   
+}
+
+.size1 {
+    height: 650px;
+    width: 400px;
+}
+
+.size2 {
+    height: 350px;
+    width: 400px;
+}
+
+.size3 {
+    height: 250px;
+    width: 400px;
+}
+
+.size4 {
+    height: 300px;
+    width: 400px;
+}
+
+
 
 footer {
     display:flex;
@@ -363,3 +365,26 @@ footer {
     margin-top: 50px;
 }
 
+/* MEDIA QUERIES SECTION */
+
+@media only screen and (max-device-width: 600px) {
+
+    #headdiv {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    img {
+        display: flex;
+        justify-content: center;
+    }
+    
+    a:hover {
+        color:#0065FC;
+        border-width: 2px;
+        border-bottom-style: solid;
+        border-color: #0065FC;
+        border-top-style: none;
+    }
+    
+    }
