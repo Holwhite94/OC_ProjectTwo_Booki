@@ -130,6 +130,7 @@ ul {
 }
 
 li {
+    display: flex;
     box-sizing: border-box;
     padding-right: 5px;
     margin: 20px;
@@ -228,6 +229,7 @@ i {
 }
 
 .hotelimg {
+    display: flex;
     width: 300px;
     height: 150px;
     object-fit: cover;
@@ -419,9 +421,108 @@ footer {
     #text {
         display: flex;
         flex-direction: column;
-        font
-       
     }
 
     
+    #filters {
+        display: flex; 
+        flex-direction: column;
+        flex-wrap: wrap;
     }
+
+    #ul {
+        display: flex; 
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #li {
+        flex-shrink: 4;
+    }
+
+    /*acom, most pop and activities */
+
+    #acom {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        
+    }
+
+    
+
+    span {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+   
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+        width: 500px;
+    }
+
+    .hotelimg {
+        height: 100%;
+        object-fit: cover;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+    }
+
+  #mostpopular {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .mpcards {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        width: 500px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+        
+    }
+
+    .hotelimgmp {
+        width: 100%;
+        object-fit: cover;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+    }
+
+    h5 {
+        padding-left: 0px;
+    }
+
+    #actcontainer {
+        display: flex;
+        flex-direction: column;
+        }
+
+    #act {
+        width: 500px;
+        height: 300px; 
+        margin-left: 0px;
+    }
+    #headm{
+        padding-left: 50px;
+    }
+
+    #actcardscontainer {
+        max-height: none;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
