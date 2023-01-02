@@ -465,7 +465,7 @@ footer {
         flex-wrap: wrap;
     }
 
-    #ul {
+    ul {
         display: flex; 
         flex-direction: row;
         flex-wrap: wrap;
@@ -514,6 +514,8 @@ footer {
         flex-wrap: wrap;
         flex-shrink: 4;
         margin-top: 40px;
+        width: 100%;
+        
         
     }
 
@@ -543,7 +545,13 @@ footer {
 
     h5 {
         padding-left: 0px;
+        font-size: x-large;
        
+    }
+
+    #show {
+        padding-left: 45px;
+        font-size: large;
     }
 
     #actcontainer {
@@ -571,6 +579,8 @@ footer {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        padding-left: 5px;
+
     }
 }
 
