@@ -140,6 +140,7 @@ ul {
 
 li {
     display: flex;
+    align-items: center;
     box-sizing: border-box;
     padding-right: 5px;
     margin: 20px;
@@ -381,12 +382,19 @@ span {
     padding-left: 0px;
 }
 
+#footerdiv {
+    padding: 20px; 
+    margin-right: 300px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
 footer {
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
-    justify-items: center;
-    flex-grow: 3;
+  
     background-color:#F2F2F2;
     margin-top: 50px;
 }
