@@ -213,25 +213,22 @@ i {
 
 }
 
-#star {
+.fa-star {
     background: none;
     border-radius: 0px;
     color:#0065FC;
     padding: 0px;
 }
 
-#starg {
-    background: none;
-    border-radius: 0px;
-    padding:2px;
-    color:#b6b4b4;
-    }
+#star5, #star15, #star19, #star20, #star40, #star45 {
+     color:#b6b4b4;
+}
 
 .cards {
     border-style: solid;
     border-color: white;
     border-radius: 20px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin-bottom: 50px;
     box-shadow: 2px 2px 2px 2px #b6b4b4;
     
@@ -285,7 +282,7 @@ h5 {
     color: black;
 }
 
-span {
+#acomandpopdiv {
     display:flex;
     flex-direction: row;
 }
@@ -294,11 +291,12 @@ span {
     border-style: solid;
     border-color: white;
     border-radius: 20px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     display:flex;
     flex-direction: row;
     width:400px;
     margin-left: 55px;
+    margin-right: 50px;
     margin-bottom: 50px; 
     box-shadow: 2px 2px 2px 2px #b6b4b4;
     
@@ -323,13 +321,39 @@ span {
 
 /* Activities */
 
-#actimg {
-   height:85%;
+#actimg1, #actimg4 {
+   height:90%;
    width: 100%;
    object-fit:cover;
    border-top-left-radius: 20px;
    border-top-right-radius: 20px;
-   }
+}
+
+#actimg5, #actimg6 {
+   height:80%;
+   width: 100%;
+   object-fit:cover;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+
+}
+
+#actimg2 {
+    height:85%;
+   width: 100%;
+   object-fit:cover;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+}
+
+#actimg3 {
+    height:77%;
+   width: 100%;
+   object-fit:cover;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+}
+
 
 
 
@@ -339,9 +363,9 @@ span {
     flex-flow: column wrap;
     margin-left: 50px;
     max-height: 700px;
-   }
+}
 
-#act {
+#act1, #act2, #act3, #act4, #act5, #act6 {
     border-radius: 20px;
     box-shadow: 2px 2px 2px 2px #b6b4b4;
     margin: 20px;
@@ -350,11 +374,11 @@ span {
     flex-direction: column;
 }
 
-#txt { 
+.txt { 
    font-weight: bold;
    margin: 0px;
    padding-left: 20px;
-   padding-top: 5px;
+   padding-top: 20px;
    
 }
 
@@ -378,11 +402,11 @@ span {
     width: 400px;
 }
 
-#foot {
+.foot {
     padding-left: 0px;
 }
 
-#footerdiv {
+.footerdiv {
     padding: 20px; 
     margin-right: 300px;
     margin-left: 50px;
@@ -485,7 +509,7 @@ footer {
     }
 
     /*acom, most pop and activities */
-  span {
+  .acomandpop {
         display: flex;
         flex-direction: column-reverse;
         flex-wrap: wrap;
@@ -568,7 +592,7 @@ footer {
        
         }
 
-    #act {
+    #act1, #act2, #act3, #act4, #act5, #act6 {
         width: 600px;
         height: 300px; 
         margin-left: 0px;
