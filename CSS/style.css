@@ -8,6 +8,8 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    flex: 2 2 100%;
+  
 }
 
 header {
@@ -125,6 +127,19 @@ align-content:center;
     flex-direction: row;
 }
 
+#i1, #i2, #i3, #i4 {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    padding: 10px;
+    border-style: hidden;
+    border-radius: 50px;
+}
+
 h4 {
     display: flex;
     align-items: center;
@@ -187,7 +202,7 @@ i {
 /* accommodations */
 
 #acom {
-    flex-basis: 80%;
+   
     background-color:#F2F2F2;
     border-radius: 10px;
     box-sizing: border-box;
@@ -208,9 +223,6 @@ i {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 30px;
-    
-
 }
 
 .fa-star {
@@ -225,19 +237,20 @@ i {
 }
 
 .cards {
+    flex: 2 2 30%;
+    min-width: 200px;
     border-style: solid;
     border-color: white;
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
+    margin: 10px;
     margin-bottom: 50px;
     box-shadow: 2px 2px 2px 2px #b6b4b4;
-    
-    
 }
 
 .hotelimg {
     display: flex;
-    width: 300px;
+    width: 100%;
     height: 150px;
     object-fit: cover;
     border-top-left-radius: 20px;
@@ -321,48 +334,55 @@ h5 {
 
 /* Activities */
 
+
 #actimg1, #actimg4 {
-   height:90%;
-   width: 100%;
-   object-fit:cover;
-   border-top-left-radius: 20px;
-   border-top-right-radius: 20px;
+    width: 100%;
+    height: 80%;
+    object-fit:cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+ }
+ 
+ #actimg5, #actimg6 {
+    width: 100%;
+    height: 80%;
+    object-fit:cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+ 
+ }
+ 
+ #actimg2 {
+    width: 100%;
+    height: 80%;
+    object-fit:cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+ }
+ 
+ #actimg3 {
+    width: 100%;
+    height: 80%;
+    object-fit:cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+ }
+ 
+ 
+
+#actcontainer {
+    display: flex;
+    flex-direction: column;
+    
 }
-
-#actimg5, #actimg6 {
-   height:80%;
-   width: 100%;
-   object-fit:cover;
-   border-top-left-radius: 20px;
-   border-top-right-radius: 20px;
-
-}
-
-#actimg2 {
-    height:85%;
-   width: 100%;
-   object-fit:cover;
-   border-top-left-radius: 20px;
-   border-top-right-radius: 20px;
-}
-
-#actimg3 {
-    height:77%;
-   width: 100%;
-   object-fit:cover;
-   border-top-left-radius: 20px;
-   border-top-right-radius: 20px;
-}
-
-
-
 
 
 #actcardscontainer {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     margin-left: 50px;
-    max-height: 700px;
+    
+    
 }
 
 #act1, #act2, #act3, #act4, #act5, #act6 {
@@ -370,9 +390,10 @@ h5 {
     box-shadow: 2px 2px 2px 2px #b6b4b4;
     margin: 20px;
     display:flex;
-    overflow: hidden;
     flex-direction: column;
 }
+
+
 
 .txt { 
    font-weight: bold;
@@ -383,23 +404,23 @@ h5 {
 }
 
 .size1 {
-    height: 650px;
-    width: 400px;
+    
+    width: 20%;
 }
 
 .size2 {
-    height: 350px;
-    width: 400px;
+    
+    width: 20%;
 }
 
 .size3 {
-    height: 250px;
-    width: 400px;
+    
+    width: 20%;
 }
 
 .size4 {
-    height: 300px;
-    width: 400px;
+    
+    width: 20%;
 }
 
 .foot {
@@ -425,7 +446,7 @@ footer {
 
 /* MEDIA QUERIES SECTION */
 
-@media only screen and (max-device-width: 768px) {
+@media (max-width: 768px) {
 
     /*logo and nav*/
 
@@ -501,7 +522,7 @@ footer {
         display: flex; 
         flex-direction: row;
         flex-wrap: wrap;
-        max-width: 800px;
+        max-width: 600px;
     }
 
     #li {
@@ -509,7 +530,7 @@ footer {
     }
 
     /*acom, most pop and activities */
-  .acomandpop {
+  #acomandpopdiv {
         display: flex;
         flex-direction: column-reverse;
         flex-wrap: wrap;
@@ -527,11 +548,16 @@ footer {
     .cards {
         display: flex;
         flex-direction: column;
-        flex-shrink: 4;
+        flex-basis: unset; 
         height: 300px;
         width: 600px;
         border-width: 10px;
        
+    }
+
+    #hotelcards {
+        justify-content: unset;
+        padding-left: 40px;
     }
 
     .hotelimg {
@@ -562,6 +588,7 @@ footer {
         
         
     }
+
 
     .hotelimgmp {
         width: 50%;
