@@ -558,7 +558,7 @@ footer {
         display: flex;
         flex-direction: column;
         height: 300px;
-        width: 95%;
+        width: 90%;
         border-width: 10px;
        
     }
@@ -589,7 +589,7 @@ footer {
         flex-wrap: wrap;
         flex-shrink: 4;
         margin-top: 40px;
-        width: 100%;
+        
     }
 
     .mpcards {
@@ -631,7 +631,7 @@ footer {
         }
 
     #act1, #act2, #act3, #act4, #act5, #act6 {
-        width: 600px;
+        width: 90%;
         height: 300px; 
         margin-left: 0px;
       
@@ -657,7 +657,7 @@ footer {
         flex-direction: column;
         flex-wrap: wrap;
         padding-left: 5px;
-        width: 130%;
+        width: 100%;
 
     }
 }
