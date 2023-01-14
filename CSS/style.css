@@ -108,6 +108,10 @@ align-content:center;
     
     color: white;
     background-color: #0065FC;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
 }
 
 #text {
@@ -504,15 +508,16 @@ footer {
     /* text search and filters */ 
 
     #searchtxt {
-        display: none;
+        visibility: hidden;
     }
+
 
     button {
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
     }
 
-   
+ 
     
 
     #text {
@@ -670,9 +675,5 @@ footer {
 }
 /* things left to do: 
 
-make sure images match
-check tablet version 
-swap side of image for most popular
-ensure full screen size works. 
 
 */
