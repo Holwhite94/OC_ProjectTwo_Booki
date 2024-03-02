@@ -241,6 +241,8 @@ i {
 }
 
 .cards {
+    display: flex;
+    flex-direction: column;
     border-style: solid;
     border-color: white;
     border-radius: 20px;
@@ -266,7 +268,7 @@ i {
     padding-left: 20px;
     padding-bottom: 10px;
     padding-top: 0px;
-    height: 60px;
+    
    
 }
 
@@ -569,12 +571,12 @@ footer {
     }
 
     #hotelcards {
-        justify-content: unset;
-        padding-left: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .hotelimg {
-        height: 65%;
         width: 100%;
         object-fit: cover;
     }
@@ -582,6 +584,9 @@ footer {
     .acominfo {
         font-size: medium;
         font-weight: bold; 
+        padding-left: 20px; 
+        padding-right: 20px; 
+        text-align: center;
     }
 
     .hotelname {
@@ -667,13 +672,17 @@ footer {
     }
 }
 
-
 @media (min-width: 768px) {
     #searchicon {
         display: none; 
     }
-}
-/* things left to do: 
 
+    .cards {
+        width: 90%;
+    }
 
-*/
+    footer{
+        display:flex;
+        flex-direction: column;
+    }
+} 
