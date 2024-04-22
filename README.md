@@ -1,7 +1,5 @@
 # ProjectTwo
 
-github pages : https://holwhite94.github.io/ProjectTwo/
-
 The brief - Turn Mock-Ups Into a Web Page with HTML & CSS
 
 - Project based on a static image of the desired website 'Booki' which was to promote hotels.  
